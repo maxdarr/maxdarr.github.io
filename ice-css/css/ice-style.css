@@ -30,11 +30,12 @@ aside {
   display: block;
   position: absolute;
   background-color: white;
-  height: 400px;
+  height: 45%;
+	width: 20%;
   background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100% 60%;
+  background-size: 100% 50%;
 }
 #content {
   background-color: #545549;
