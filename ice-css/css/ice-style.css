@@ -30,8 +30,8 @@ aside {
   display: block;
   position: absolute;
   background-color: white;
-  height: 45%;
-	width: 20%;
+  height: 65%;
+	width: 15%;
   background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -48,6 +48,7 @@ aside {
 
 #content p{
   width: 45%;
+  margin: 0;
 }
 
 footer {
