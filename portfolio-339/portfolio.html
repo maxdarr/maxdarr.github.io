@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/fav.jpg" />
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script/myscript.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,34 +33,44 @@
         <h1 class="title">portfolio</h1>
       </header>
       <div class="content">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+        <h1 class="mobile-title">Portfolio</h1>
+        <section class="portfolio">
+        <div class="photo-grid">
+          <div class="photo-cell apple">
+            <a href="pdf/apple.pdf" target="_blank"><img class="resp-img" src="images/apple.jpg" alt="botanical illustration of an apple with the word 'knowledge' interwoven into its vines"></a>
+            <a href="pdf/apple.pdf" target="_blank"><p class="caption">Apple Botanical Illustration</p></a>
+          </div>
+          <div class="photo-cell blackout">
+            <a href="pdf/blackout.pdf" target="_blank"><img class="resp-img" src="images/blackout.jpg" alt="newspaper with most of the words blacked out with a marker"></a>
+            <a href="pdf/blackout.pdf" target="_blank"><p class="caption">Blackout Poetry</p></a>
+          </div>
+          <div class="photo-cell rpo">
+            <a href="pdf/rpo-poster.pdf" target="_blank"><img class="resp-img" src="images/rpo.jpg" alt="Ready Player One poster with iron giant and pixelated character jumping for a key"></a>
+            <a href="pdf/rpo-poster.pdf" target="_blank"><p class="caption">Ready Player One Poster</p></a>
+          </div>
+          <div class="photo-cell valentines">
+            <a href="pdf/valentines.pdf" target="_blank"><img class="resp-img" src="images/valentines.jpg" alt="2 birds on a branch with the caption 'whatever our souls are made of, his and mine are the same'"></a>
+            <a href="pdf/valentines.pdf" target="_blank"><p class="caption">Lukova Valentine's Poster</p></a>
+          </div>
+          <div class="photo-cell alphabet">
+            <a href="pdf/alphabet.pdf" target="_blank"><img class="resp-img" src="images/alphabet.jpg" alt="The Office tv show themed alphabet poster where every letter references a joke from The Office"></a>
+            <a href="pdf/alphabet.pdf" target="_blank"><p class="caption">The Office Alphabet</p></a>
+          </div>
+          <div class="photo-cell banners">
+            <a href="pdf/banner.pdf" target="_blank"><img class="resp-img" src="images/banners.jpg" alt="Banners to learn more about different classes at the University of Michigan Biological Station"></a>
+            <a href="pdf/banner.pdf" target="_blank"><p class="caption">Biology Class Banners</p></a>
+          </div>
+          <div class="photo-cell snail">
+            <a href="pdf/snail_vector.pdf" target="_blank"><img class="resp-img" src="images/snail.jpg" alt="Cartoon drawing of a snail"></a>
+            <a href="pdf/snail_vector.pdf" target="_blank"><p class="caption">Vector Snail</p></a>
+          </div>
+        </div>
+      </section>
     </div>
     </div>
-    <script type="text/javascript">
-
-      // Menu-toggle button
-
-      $(document).ready(function() {
-        $(".menu-icon").on("click", function() {
-          $("nav ul").toggleClass("showing");
-        });
-      });
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-          $('nav').addClass('black');
-        }
-        else {
-          $('nav').removeClass('black');
-        }
-      })
-    </script>
+    <footer>
+      <p class="footer-left">&copy; 2018 - Maximilian Darr</p>
+      <p class="footer-right"><a href="https://www.linkedin.com/in/maximilian-darr/">LinkedIn</a> | <a href="http://www.maximiliandarr.com">Professional Site</a></p>
+    </footer>
     </body>
     </html>

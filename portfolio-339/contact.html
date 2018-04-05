@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/fav.jpg" />
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script/myscript.js"></script>
   </head>
-  <body>
+  <body class="contact-body">
     <div class="wrapper">
-      <header>
-        <nav>
+      <header class="contact-header">
+        <nav class="contact-nav">
           <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
           </div>
@@ -30,36 +31,28 @@
           </div>
         </nav>
         <h1 class="title">contact me</h1>
+
       </header>
-      <div class="content">
+      <div class="content contact-content">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          If you think there is a way for us to work together or you just want to grab a cup of coffee, I would love to hear from you.
         </p>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Leave me a message below
         </p>
+        <div class="contact-form">
+          <form action="https://getform.org/f/c2dc178c-8751-4e87-815e-b82536d99a0a" method="POST">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="E-Mail" />
+            <input type="text" id="msg" placeholder="Message" />
+            <button aria-label="Click to submit" type="submit">Let's Talk</button>
+          </form>
+        </div>
   </div>
     </div>
-    <script type="text/javascript">
-
-      // Menu-toggle button
-
-      $(document).ready(function() {
-        $(".menu-icon").on("click", function() {
-          $("nav ul").toggleClass("showing");
-        });
-      });
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-          $('nav').addClass('black');
-        }
-        else {
-          $('nav').removeClass('black');
-        }
-      })
-    </script>
+    <footer>
+      <p class="footer-left">&copy; 2018 - Maximilian Darr</p>
+      <p class="footer-right"><a href="https://www.linkedin.com/in/maximilian-darr/">LinkedIn</a> | <a href="http://www.maximiliandarr.com">Professional Site</a></p>
+    </footer>
 </body>
 </html>
