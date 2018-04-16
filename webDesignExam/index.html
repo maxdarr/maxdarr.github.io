@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>339 Exam</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript">
+    function removePic(){
+      var image = document.getElementById("image").style.display='none';
+      document.getElementById("photo-grid").style.display='block';
+      document.getElementById("logo").style.width='50%';
+      document.getElementById("logo").style.margin='0 auto';
+    }
+    function unDo(){
+      document.getElementById("image").style.display='grid'
+      document.getElementById("photo-grid").style.display='grid';
+      document.getElementById("logo").style.width='100%';
+
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Maximilian Darr</h1>
+    <div>
+      <section class="photos">
+        <div id="photo-grid" class="photo-grid">
+          <div class="photo-cell exam-pic">
+            <img id="image" src="images/examPic.JPG" alt="3 women posing with crocodile cutout">
+          </div>
+          <div id="logo" class="photo-cell logo">
+            <img id="umsi" src="images/UMSI-logo.jpg" alt="logo for the University of Michigan's school of information">
+          </div>
+        </div>
+      </section>
+      <div class="buttons">
+        <button type="button" onclick="removePic()">Hide Image</button>
+        <button type="button" onclick="unDo()">Show Image</button>
+      </div>
+    </div>
+  </body>
+</html>
